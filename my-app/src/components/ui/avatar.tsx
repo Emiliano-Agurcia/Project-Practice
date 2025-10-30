@@ -1,14 +1,11 @@
 "use client";
 
-import * as React from "react";
+import React from "react";
 import * as AvatarPrimitive from "@radix-ui/react-avatar";
 
 import { cn } from "@/lib/utils";
 
-const Avatar = React.forwardRef<
-    React.ElementRef<typeof AvatarPrimitive.Root>,
-    React.ComponentPropsWithoutRef<typeof AvatarPrimitive.Root>
->(({ className, ...props }, ref) => (
+const Avatar = React.forwardRef< React.ComponentRef<typeof AvatarPrimitive.Root>, React.ComponentPropsWithoutRef<typeof AvatarPrimitive.Root> >(({ className, ...props }, ref) => (//Option 1: Complex (Declares as radix component)
     <AvatarPrimitive.Root
         ref={ref}
         className={cn(
@@ -18,24 +15,18 @@ const Avatar = React.forwardRef<
         {...props}
     />
 ));
-Avatar.displayName = AvatarPrimitive.Root.displayName;
+Avatar.displayName = AvatarPrimitive.Root.displayName;//Option 1: displayName
 
-const AvatarImage = React.forwardRef<
-    React.ElementRef<typeof AvatarPrimitive.Image>,
-    React.ComponentPropsWithoutRef<typeof AvatarPrimitive.Image>
->(({ className, ...props }, ref) => (
+const AvatarImage = React.forwardRef< HTMLImageElement, React.ImgHTMLAttributes<HTMLImageElement> >(({ className, ...props }, ref) => (//Option 2: Simplified (you lose inference and type-safety, because it declares as standard HTML)
     <AvatarPrimitive.Image
         ref={ref}
         className={cn("aspect-square h-full w-full", className)}
         {...props}
     />
 ));
-AvatarImage.displayName = AvatarPrimitive.Image.displayName;
+AvatarImage.displayName = "Avatar Image";//Option 2: displayName
 
-const AvatarFallback = React.forwardRef<
-    React.ElementRef<typeof AvatarPrimitive.Fallback>,
-    React.ComponentPropsWithoutRef<typeof AvatarPrimitive.Fallback>
->(({ className, ...props }, ref) => (
+const AvatarFallback = React.forwardRef<React.ComponentRef<typeof AvatarPrimitive.Fallback>, React.ComponentPropsWithoutRef<typeof AvatarPrimitive.Fallback>>(({ className, ...props }, ref) => (
     <AvatarPrimitive.Fallback
         ref={ref}
         className={cn(
