@@ -37,7 +37,7 @@ export default function ChatBubble({ message }: ChatBubbleProps) {
             ? "bg-primary text-primary-foreground rounded-br-none"
             : "bg-secondary text-secondary-foreground rounded-bl-none"
         )}
-      >
+        >
         <p className="text-sm">{message.text}</p>
         {formattedTimestamp && (
           <p className="mt-1 text-xs text-right opacity-70">
