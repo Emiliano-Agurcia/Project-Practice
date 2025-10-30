@@ -5,9 +5,7 @@ You need to install each component manually (correct this in Components.md)
 scroll-area.tsx and imports
 avatar.tsx and imports
 
-What is this?
-viewportRef
-"use client";
+
 
 
 These variables seem to be :root exclusive:
@@ -15,20 +13,35 @@ These variables seem to be :root exclusive:
   --foreground: #ffffff;
 
 Rendering:
-SSR benefits over CSR (Include Event components disadvantage for SSR)
-Standard is using both, but use SSR as much as possible
-Static vs Dynamic  Rendering
-"use client"; This is for making the component use CSR (If that comp. depends of other comps. they will be CSR too) (What happens if not implemented)
+  SSR benefits over CSR (Include Event components disadvantage for SSR)
+  Standard is using both, but use SSR as much as possible
+  Static vs Dynamic  Rendering
+  "use client"; This is for making the component use CSR (If that comp. depends of other comps. they will be CSR too) (What happens if not implemented)
 
-npm run build - Sims a production build (Takes a while | ○=static λ=dynamic)
-npm start - Runs the production build
+  npm run build - Sims a production build (Takes a while | ○=static λ=dynamic)
+  npm start - Runs the production build
 
 Caching:
-How to use File System as DB
-How caching works in next.js (cache:'no-store' | next: {revalidate 15}) This doesnt apply using axios
+  How to use File System as DB
+  How caching works in next.js (cache:'no-store' | next: {revalidate 15}) This doesnt apply using axios
 
 Navigation.md:
-Why we use Link and not href
+  Why we use Link and not href
+
+What can I do for specific info like:
+  What is this?
+  viewportRef
+  "use client";
+
+  React Components?:
+  - React.forwardRef:
+    Allows you to forward a ref from a parent component to a DOM node (so someone using <Button ref={...} /> actually gets the underlying <button>).
+  - <HTMLButtonElement, ButtonProps>:
+    → First param: the element type the ref points to (button tag).
+    → Second param: the props the component accepts (ButtonProps you defined).
+  - ({ className, variant, size, asChild = false, ...props }, ref):
+    → Destructures the props object and provides a default for asChild.
+    → ...props captures all other props (onClick, aria-label, etc.) and passes them through.
 
 Tutorials:
 [Component Responsiveness](https://youtu.be/l04dDYW-QaI?si=vvSMTF165X0vxTMb)
