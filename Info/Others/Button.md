@@ -1,3 +1,12 @@
+Delete numbering, but make something that can distinguish questions/sections.
+Also add a section explaining this:
+export interface ButtonProps
+  extends React.ButtonHTMLAttributes<HTMLButtonElement>,
+    VariantProps<typeof buttonVariants> {
+  asChild?: boolean
+}
+
+
 Summary Table
 | #     | 🏷️ Topic                | 💡 Explanation                                                                                                                                                                                                                                        | 🧠 Example / Effect                                                                                                                                |
 | ----- | ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
