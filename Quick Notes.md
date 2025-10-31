@@ -17,6 +17,8 @@ Caching:
   How caching works in next.js (cache:'no-store' | next: {revalidate 15}) This doesnt apply using axios
 
 What can I do for specific info like:
+  @custom-variant hover (&:hover);
+
   React Components?:
   - React.forwardRef:
     Allows you to forward a ref from a parent component to a DOM node (so someone using <Button ref={...} /> actually gets the underlying <button>).
