@@ -49,8 +49,8 @@ Non-included sections:
   CSS: CSS can be easily implemented along AI (also there is documentation w3schools) 
   Tailwind: better see the documentation page, or use Tailwind Docs extension.
 
-How to use gitlens
-  Is it better than normal git pull and requests? (looks more complex)
+Use Figma extension
+  Click component > code | Change CSS to preferred framework
 
 Tutorials:
 [Component Responsiveness](https://youtu.be/l04dDYW-QaI?si=vvSMTF165X0vxTMb)
