@@ -18,13 +18,29 @@
   --color-muted-foreground: #999999;
   --color-border: #404040;
   
-  --color-chat-bg: #333333;
+  --color-chat-bg: linear-gradient(135deg, var(--color-primary) 0%, #ffffff0a 100%);
+  /* --color-chat-bg: #fffffff2; */
 
   /* Test colors */
   --color-test: #ff0000; /* red */
   --color-test1: #00f800;/* green */
   --color-test2: #0000f8;/* blue */
   --color-test3: #fefe00;/* yellow */
+
+  --font-primary: 'hedliner', sans-serif;
+  --font-secondary: 'Geist Sans', sans-serif;
+
+  --animate-fade-in-scale: fade-in-scale 0.3s ease-out;
+  @keyframes fade-in-scale {
+    0% {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
 }
 
 @theme inline {
@@ -45,3 +61,5 @@ body {
   @apply bg-background text-foreground;
 }
 
+/* Makes hover work in TW v4 (In v4 hybrids id as touch devices, not applying hover automatically) */
+@custom-variant hover (&:hover);
