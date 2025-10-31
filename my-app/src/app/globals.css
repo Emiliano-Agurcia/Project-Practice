@@ -34,11 +34,11 @@
   @keyframes fade-in-scale {
     0% {
       opacity: 0;
-      transform: scale(0.95);
+      transform: scale(1);
     }
     100% {
       opacity: 1;
-      transform: scale(1);
+      transform: scale(1.5);
     }
   }
 }
@@ -63,3 +63,4 @@ body {
 
 /* Makes hover work in TW v4 (In v4 hybrids id as touch devices, not applying hover automatically) */
 @custom-variant hover (&:hover);
+/* You can test this by using Surface7Pro w/out keyboard, and testing their website hover animations */
