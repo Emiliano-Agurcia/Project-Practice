@@ -43,5 +43,24 @@ What can I do for specific info like:
     → Destructures the props object and provides a default for asChild.
     → ...props captures all other props (onClick, aria-label, etc.) and passes them through.
 
+Images:
+  How to declare component
+  Free Images: Unsplash, Freepik, Pexels, Pixabay.
+
+Website:
+  Make a website folder, ask ideas of which topics to add.
+  Starting to build
+  Tricks/Gimmicks (Section scrolling, ghost components, side scrolling, etc.)
+  [Website Building Tips video]()
+
 Tutorials:
 [Component Responsiveness](https://youtu.be/l04dDYW-QaI?si=vvSMTF165X0vxTMb)
+
+[Website Building Tips](https://www.youtube.com/watch?v=OjEg0IBR_ak)
+  80/20 Rule: Investigate and Design first, code later.
+  Hero Section ( Examples on vid)
+  Repeateble design for consistency (Cards, Sections)
+  Free Images: Unsplash, Freepik, Pexels, Pixabay.
+  4 or 3 Colors
+  1 font (3 max | Use variables)
+  Bonus tips: Dynamic h1 size, flex-cards, section-snap scrolling.
