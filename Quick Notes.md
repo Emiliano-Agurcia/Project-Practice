@@ -12,21 +12,15 @@ These variables seem to be :root exclusive:
   --background: #1A1A1A;
   --foreground: #ffffff;
 
-Rendering:
-  SSR benefits over CSR (Include Event components disadvantage for SSR)
-  Standard is using both, but use SSR as much as possible
-  Static vs Dynamic  Rendering
-  "use client"; This is for making the component use CSR (If that comp. depends of other comps. they will be CSR too) (What happens if not implemented)
 
-  npm run build - Sims a production build (Takes a while | ○=static λ=dynamic)
-  npm start - Runs the production build
+
 
 Caching:
   How to use File System as DB
   How caching works in next.js (cache:'no-store' | next: {revalidate 15}) This doesnt apply using axios
 
+Rendering.md:
 Navigation.md:
-  Why we use Link and not href
 
 What can I do for specific info like:
   What is this?
@@ -64,3 +58,4 @@ Tutorials:
   4 or 3 Colors
   1 font (3 max | Use variables)
   Bonus tips: Dynamic h1 size, flex-cards, section-snap scrolling.
+  Not in video: 1 icon library
