@@ -36,6 +36,7 @@ Website:
   Starting to build
   Tricks/Gimmicks (Section scrolling, ghost components, side scrolling, etc.)
   [Website Building Tips video]()
+  For section ideas, you can go to the websites in Components.md
 
 Markdown:
   Include shortcuts for big things (table of contents)
@@ -53,7 +54,7 @@ Tutorials:
 
 [Website Building Tips](https://www.youtube.com/watch?v=OjEg0IBR_ak)
   80/20 Rule: Investigate and Design first, code later.
-  Hero Section ( Examples on vid)
+  Hero Section (Examples on vid)
   Repeateble design for consistency (Cards, Sections)
   Free Images: Unsplash, Freepik, Pexels, Pixabay.
   4 or 3 Colors
