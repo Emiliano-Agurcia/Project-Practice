@@ -9,7 +9,7 @@ These variables seem to be :root exclusive:
   --background: #1A1A1A;
   --foreground: #ffffff;
 
-
+You can use AI pressing the sparkles icon at Source Control msg box.
 
 
 Caching:
