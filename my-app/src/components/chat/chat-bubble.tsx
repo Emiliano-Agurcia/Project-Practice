@@ -32,8 +32,8 @@ export default function ChatBubble({ message }: ChatBubbleProps) {
       )}
       <div className={cn("max-w-xs md:max-w-md lg:max-w-lg rounded-lg px-4 py-2 shadow-md wrap-break-word",
           isUser
-            ? "bg-primary text-primary-foreground rounded-br-none"
-            : "bg-secondary text-secondary-foreground rounded-bl-none"
+            ? "bg-secondary text-secondary-foreground rounded-br-none"
+            : "bg-primary text-primary-foreground rounded-bl-none"
         )}
         >
 
