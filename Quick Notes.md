@@ -27,6 +27,11 @@ What can I do for specific info like:
     → Destructures the props object and provides a default for asChild.
     → ...props captures all other props (onClick, aria-label, etc.) and passes them through.
 
+Fonts:
+  Stored in layout.tsx (non external network requestss font)
+  Explain local vs non-local font handling (is non-local better?)
+  Explain the differences between fonts with external network requests and the ones w/out.
+
 Images:
   How to declare component
   Free Images: Unsplash, Freepik, Pexels, Pixabay.
