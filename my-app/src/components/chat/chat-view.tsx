@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { Circle } from "lucide-react";
 import ChatMessages from "./chat-messages";
 import MessageInput from "./message-input";
 
@@ -42,7 +43,9 @@ export default function ChatView({ initialMessages }: ChatViewProps) {
   return (
     <div className="flex flex-col w-full h-screen max-w-6xl mx-auto shadow-2xl bg-chat-bg">
        <header className="p-4 border-b shadow-sm border-border">
-        <h1 className="text-2xl font-bold text-foreground font-headline">ModernChat</h1>
+        <h1 className="text-2xl font-bold text-foreground font-headline">ChatBot</h1>
+        
+        <p className="flex flex-row gap-2 w-max text-md text-primary"><Circle className="self-center w-3 h-3 fill-test sm:fill-test1 lg:fill-test2" />Online</p>
        </header>
        <div className="flex flex-col flex-1 overflow-hidden">
         <ChatMessages messages={messages} />
