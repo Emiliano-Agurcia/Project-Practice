@@ -6,6 +6,8 @@ While you can create your own components from scratch, using established compone
 
 ### 1. Radix UI
 A low-level, headless UI component library focused on accessibility and customization.
+- **Website**: [Radix UI](https://www.radix-ui.com/)
+- **Documentation**: [Radix UI Docs](https://www.radix-ui.com/docs/primitives/overview/introduction)
 
 **Core Utilities Installation:**
 ```bash
@@ -19,6 +21,8 @@ These utilities help with component styling:
 
 ### 2. shadcn/ui
 A collection of reusable components built on top of Radix UI and Tailwind CSS.
+- **Website**: [shadcn/ui](https://ui.shadcn.com/)
+- **Documentation**: [shadcn/ui Docs](https://ui.shadcn.com/docs)
 
 **Installation:**
 ```bash
@@ -42,6 +46,8 @@ npx shadcn-ui@latest add button
 
 ### 3. Material UI (MUI)
 A comprehensive React UI framework implementing Google's Material Design.
+- **Website**: [MUI](https://mui.com/)
+- **Documentation**: [MUI Docs](https://mui.com/material-ui/getting-started/overview/)
 
 **Installation:**
 ```bash
@@ -72,18 +78,25 @@ function MyForm() {
 ## Other Popular Options
 
 ### 1. Chakra UI
+- **Website**: [Chakra UI](https://chakra-ui.com/)
+- **Documentation**: [Chakra UI Docs](https://chakra-ui.com/docs/getting-started)
 - Modern, modular component library
 - Installation: `npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion`
 - Great for rapid development
 - Accessible by default
 
 ### 2. TailwindUI
+- **Website**: [Tailwind UI](https://tailwindui.com/)
+- **Documentation**: [Tailwind UI Docs](https://tailwindui.com/documentation)
+- **Official Components**: [Headless UI](https://headlessui.dev/)
 - Premium component collection
 - Built with Tailwind CSS
 - High-quality designs
 - Copy-paste ready
 
 ### 3. Mantine
+- **Website**: [Mantine](https://mantine.dev/)
+- **Documentation**: [Mantine Docs](https://mantine.dev/getting-started/)
 - Feature-rich component library
 - Installation: `npm install @mantine/core @mantine/hooks`
 - Modern styling
