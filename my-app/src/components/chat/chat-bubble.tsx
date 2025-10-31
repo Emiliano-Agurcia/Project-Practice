@@ -30,20 +30,21 @@ export default function ChatBubble({ message }: ChatBubbleProps) {
           <AvatarFallback>B</AvatarFallback>
         </Avatar>
       )}
-      <div
-        className={cn(
-          "max-w-xs md:max-w-md lg:max-w-lg rounded-lg px-4 py-2 shadow-md",
+      <div className={cn("max-w-xs md:max-w-md lg:max-w-lg rounded-lg px-4 py-2 shadow-md wrap-break-word",
           isUser
             ? "bg-primary text-primary-foreground rounded-br-none"
             : "bg-secondary text-secondary-foreground rounded-bl-none"
         )}
         >
+
         <p className="text-sm">{message.text}</p>
+
         {formattedTimestamp && (
           <p className="mt-1 text-xs text-right opacity-70">
             {formattedTimestamp}
           </p>
         )}
+
       </div>
     </div>
   );
