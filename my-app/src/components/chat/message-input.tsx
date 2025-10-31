@@ -31,7 +31,7 @@ export default function MessageInput({ onSend }: MessageInputProps) {
           className="flex-1 bg-background"
           autoComplete="off"
         />
-        <Button type="submit" size="icon" aria-label="Send message" variant="link">
+        <Button type="submit" size="icon" aria-label="Send message">
           <Send className="w-5 h-5" />
         </Button>
       </div>
