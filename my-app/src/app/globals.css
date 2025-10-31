@@ -21,9 +21,10 @@
   --color-chat-bg: #333333;
 
   /* Test colors */
-  --color-test1: #f80000;/* red */
-  --color-test2: #00f800;/* green */
-  --color-test3: #0000f8;/* blue */
+  --color-test: #ff0000; /* red */
+  --color-test1: #00f800;/* green */
+  --color-test2: #0000f8;/* blue */
+  --color-test3: #fefe00;/* yellow */
 }
 
 @theme inline {
