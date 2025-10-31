@@ -51,6 +51,12 @@ Markdown:
 Rendering.md:
 Navigation.md:
 
+Animation.md:
+  Include some quick tips section like:
+  You can see the purpose of basic css props (transition, ease-*, duration, delay), then put link at tailwind > Transitions & Animation
+  icons and animate-spin
+  skeleton loaders
+
 Non-included sections:
   Styling: Better do it in the future when you 
   CSS: CSS can be easily implemented along AI (also there is documentation w3schools) 
