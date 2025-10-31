@@ -40,3 +40,36 @@ It is important not to confuse the App Router with the older Pages Router system
 *   **App Router (the new, current way):** Uses the `src/app` directory where only a `page.tsx` file inside a folder creates a route. This provides better organization and enables more advanced features.
 
 In summary, the Next.js App Router's directory-based approach provides a powerful and organized way to structure your application, manage layouts, and handle loading and error states efficiently.
+
+## Link Component vs href Attribute
+
+When navigating between pages in Next.js, it's crucial to use the `Link` component from `next/link` instead of regular `<a>` tags with `href` attributes. Here's why:
+
+1. **Client-Side Navigation:**
+   - `Link` enables client-side navigation between routes without full page refreshes
+   - Regular `<a href>` causes full page reloads, losing React state and causing slower navigation
+
+2. **Automatic Code-Splitting:**
+   - `Link` components enable automatic code-splitting and prefetching
+   - When a `Link` appears in the viewport, Next.js automatically prefetches the linked page in the background
+
+3. **Preserved React State:**
+   - Navigation with `Link` preserves your React state across page transitions
+   - This means components like modals or form input values aren't lost during navigation
+
+Example Usage:
+```tsx
+// ✅ Good - Uses Next.js Link
+import Link from 'next/link'
+
+<Link href="/dashboard">
+  Go to Dashboard
+</Link>
+
+// ❌ Bad - Don't use plain anchor tags for internal navigation
+<a href="/dashboard">
+  Go to Dashboard
+</a>
+```
+
+**Note:** Only use regular `<a>` tags for external links (links to other websites) or when you specifically need a full page reload.
