@@ -5,9 +5,6 @@ You need to install each component manually (correct this in Components.md)
 scroll-area.tsx and imports
 avatar.tsx and imports
 
-
-
-
 These variables seem to be :root exclusive:
   --background: #1A1A1A;
   --foreground: #ffffff;
@@ -19,14 +16,7 @@ Caching:
   How to use File System as DB
   How caching works in next.js (cache:'no-store' | next: {revalidate 15}) This doesnt apply using axios
 
-Rendering.md:
-Navigation.md:
-
 What can I do for specific info like:
-  What is this?
-  viewportRef
-  "use client";
-
   React Components?:
   - React.forwardRef:
     Allows you to forward a ref from a parent component to a DOM node (so someone using <Button ref={...} /> actually gets the underlying <button>).
@@ -46,6 +36,17 @@ Website:
   Starting to build
   Tricks/Gimmicks (Section scrolling, ghost components, side scrolling, etc.)
   [Website Building Tips video]()
+
+Markdown:
+  Include shortcuts for big things (table of contents)
+
+Rendering.md:
+Navigation.md:
+
+Non-included sections:
+  Styling: Better do it in the future when you 
+  CSS: CSS can be easily implemented along AI (also there is documentation w3schools) 
+  Tailwind: better see the documentation page, or use Tailwind Docs extension.
 
 Tutorials:
 [Component Responsiveness](https://youtu.be/l04dDYW-QaI?si=vvSMTF165X0vxTMb)
