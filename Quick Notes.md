@@ -1,15 +1,5 @@
-import { format } from 'date-fns';
-
-radix-ui for components?:
-You need to install each component manually (correct this in Components.md)
-scroll-area.tsx and imports
-avatar.tsx and imports
-
-These variables seem to be :root exclusive:
-  --background: #1A1A1A;
-  --foreground: #ffffff;
-
-You can use AI pressing the sparkles icon at Source Control msg box.
+Project ideas:
+Website
 
 
 Caching:
