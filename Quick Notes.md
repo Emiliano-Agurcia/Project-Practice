@@ -77,3 +77,14 @@ Tutorials:
   1 font (3 max | Use variables)
   Bonus tips: Dynamic h1 size, flex-cards, section-snap scrolling.
   Not in video: 1 icon library
+
+typescript```
+<button className={`${condition ? "preset1" : ""}`}>
+    {condition ? ( 
+      // Changes Button opacity
+      <div className="opacity-0 preset1-hover:opacity-100"></div>
+    ) : (
+      <></>
+    )}
+</button>
+```
