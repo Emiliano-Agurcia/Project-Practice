@@ -1,25 +1,35 @@
 @import "tailwindcss";
 
 :root {
-  --background: #1A1A1A;
-  --foreground: #ffffff;
+  --background: #ffffff;
+  --foreground: #1A1A1A ;
+
+  hex:#1a1a1a;
 }
 
 /* >Tailwind Docs: Theme */
 @theme {/* Highlight hex-code > Ctrl+k+g */
 
-  --color-primary: #FF8811;
+  --color-primary: #FF8422;
   --color-primary-foreground: #1a1a1a;
   
-  --color-secondary: #262626;
-  --color-secondary-foreground: #ffffff;
+  --color-secondary: #ffffff;
+  --color-secondary-foreground: #000000;
+
+  --color-terciary: #222222;
+  --color-terciary-foreground: #bbbbbb;
 
   --color-muted: #262626;
   --color-muted-foreground: #999999;
+
+  --color-highlight: #ff7300;
+  --color-highlight-foreground: #171717;
+
   --color-border: #404040;
   
-  --color-chat-bg: linear-gradient(135deg, var(--color-primary) 0%, #ffffff0a 100%);
-  /* --color-chat-bg: #fffffff2; */
+  --background-image-bgg: linear-gradient(340deg, rgb(from var(--color-primary) r g b / 0.7) 0%, rgb(from var(--color-terciary) r g b / 0.9) 90%);
+  --background-image-bgi: url('/images/background3.jpg');
+  --background-image-chat-bg: var(--background-image-bgg), var(--background-image-bgi);
 
   /* Test colors */
   --color-test: #ff0000; /* red */
@@ -58,8 +68,10 @@
 } */
  
 body {
-  @apply bg-background text-foreground;
+  @apply bg-terciary text-foreground;
 }
+
+::selection {background-color: var(--color-highlight); color:  var(--color-highlight-foreground);}
 
 /* Makes hover work in TW v4 (In v4 hybrids id as touch devices, not applying hover automatically) */
 @custom-variant hover (&:hover);
