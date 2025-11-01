@@ -41,11 +41,11 @@ export default function ChatView({ initialMessages }: ChatViewProps) {
   };
 
   return (
-    <div className="flex flex-col w-full h-screen max-w-6xl mx-auto shadow-2xl bg-chat-bg">
-       <header className="p-4 border-b shadow-sm border-border bg-muted">
-        <h1 className="text-2xl text-foreground font-headline font-primary">ChatBot</h1>
+  <div className="flex flex-col w-full h-screen max-w-6xl mx-auto bg-cover shadow-2xl bg-chat-bg">
+       <header className="p-4 border-b shadow-sm border-border bg-terciary">
+        <h1 className="text-2xl text-terciary-foreground font-headline font-primary">ChatBot</h1>
         
-        <p className="flex flex-row gap-2 w-max text-md text-primary"><Circle className="self-center w-3 h-3 fill-test sm:fill-test1 lg:fill-test2" />Online</p>
+        <p className="flex flex-row gap-1 w-max text-md text-primary"><Circle className="self-center w-2 h-2 text-test1 fill-test sm:fill-test2 lg:fill-test1" />Online</p>
        </header>
        <div className="flex flex-col flex-1 overflow-hidden">
         <ChatMessages messages={messages} />
