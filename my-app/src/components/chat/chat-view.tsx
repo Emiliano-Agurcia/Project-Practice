@@ -28,7 +28,7 @@ export default function ChatView({ initialMessages }: ChatViewProps) {
     };
     setMessages((prev) => [...prev, userMessage]);
 
-    // Simulate bot reply
+    // Respuesta del bot
     setTimeout(() => {
       const botMessage: Message = {
         id: (Date.now() + 1).toString(),
